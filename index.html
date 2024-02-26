@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exemplo de layout - Lanchonete</title>
+        <link rel="icon" href="images/logo.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header id="topo">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logotipo" />
+                    logotipo
+                </div>
+                <nav class="menu">
+                    <div class="bt-menu">
+                        <a href="#mascara"></a>
+                    </div>
+                    <ul class="links">
+                        <li><a href="#topo">Home</a></li>
+                        <li><a href="#cardapio">Cardápio</a></li>
+                        <li><a href="#vantagens">Vantagens</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="banner">
+            <div class="container">
+                <div class="bloco-2">
+                    <h2>Sua comida favorita entregue na sua casa</h2>
+                    <p>Confira nossas promoções e combos exclusivos.</p>
+                    <form action="https://api.whatsapp.com/send" method="get" target="_blank">
+                        <input type="hidden" name="phone" value="5531992353301" />
+                        <input
+                            class="icon-whats"
+                            type="text"
+                            name="text"
+                            placeholder="Faça seu pedido agora"
+                        /><button class="bt-whats"></button>
+                    </form>
+                </div>
+                <div class="bloco-2">
+                    <img class="img-banner" src="images/motoboy2.png" alt="Motoboy" />
+                </div>
+            </div>
+        </section>
+        <section id="cardapio">
+            <div class="container">
+                <h2 class="title">Veja nosso cardápio completo</h2>
+                <div class="cardapio">
+                    <div class="bloco-3">
+                        <div class="imagem">
+                            <img src="images/comidas/hamburguer-1.jpg" alt="Hamburguer-1" />
+                        </div>
+                        <div class="infos-prato">
+                            <h3>Hamburguer com batata</h3>
+                            <p>Delicioso hamburguer, acompanha batatas</p>
+                        </div>
+                    </div>
+                    <div class="bloco-3">
+                        <div class="imagem">
+                            <img src="images/comidas/hamburguer-2.jpg" alt="Hamburguer-2" />
+                        </div>
+                        <div class="infos-prato">
+                            <h3>Hamburguer com anéis de cebola</h3>
+                            <p>Delicioso hamburguer com anéis de cebola</p>
+                        </div>
+                    </div>
+                    <div class="bloco-3">
+                        <div class="imagem">
+                            <img src="images/comidas/hamburguer-3.jpg" alt="Hamburguer-3" />
+                        </div>
+                        <div class="infos-prato">
+                            <h3>Hamburguer especial</h3>
+                            <p>Delicioso hamburguer artesanal especial</p>
+                        </div>
+                    </div>
+                    <div class="bloco-3">
+                        <div class="imagem">
+                            <img src="images/comidas/pizza-1.jpg" alt="pizza-1" />
+                        </div>
+                        <div class="infos-prato">
+                            <h3>Pizza de pepperoni</h3>
+                            <p>Deliciosa pizza de pepperoni com queijo</p>
+                        </div>
+                    </div>
+                    <div class="bloco-3">
+                        <div class="imagem">
+                            <img src="images/comidas/pizza-2.jpg" alt="pizza-2" />
+                        </div>
+                        <div class="infos-prato">
+                            <h3>Pizza à moda da casa</h3>
+                            <p>Deliciosa pizza à moda da casa</p>
+                        </div>
+                    </div>
+                    <div class="bloco-3">
+                        <div class="imagem">
+                            <img src="images/comidas/pizza-3.jpg" alt="pizza-3" />
+                        </div>
+                        <div class="infos-prato">
+                            <h3>Pizza especial</h3>
+                            <p>Deliciosa pizza especial do chef</p>
+                        </div>
+                    </div>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5531992353301&text=Fa%C3%A7a%20seu%20pedido"
+                        class="bt-destaque"
+                        target="_blank"
+                        >Peça Agora</a
+                    >
+                </div>
+            </div>
+        </section>
+        <section id="receba">
+            <div class="container">
+                <h2 class="title">Receba em sua casa de forma fácil e segura</h2>
+                <div class="receba">
+                    <div class="bloco-3">
+                        <div class="imagem">
+                            <img src="images/whatsapp2.png" alt="Whatsapp" />
+                        </div>
+                        <div class="fluxo">
+                            <h3>Peça pelo Whatsapp</h3>
+                            <p>Peça pelo Whatsapp e receba em casa</p>
+                        </div>
+                    </div>
+                    <div class="bloco-3">
+                        <div class="imagem">
+                            <img src="images/pagamento.png" alt="Pagamento" />
+                        </div>
+                        <div class="fluxo">
+                            <h3>Pagamento seguro</h3>
+                            <p>Pagamento seguro e prático</p>
+                        </div>
+                    </div>
+                    <div class="bloco-3">
+                        <div class="imagem">
+                            <img src="images/motoboy.png" alt="Motoboy" />
+                        </div>
+                        <div class="fluxo">
+                            <h3>Entrega rápida</h3>
+                            <p>Entrega rápida e segura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="vantagens">
+            <div class="container">
+                <div class="bloco-2">
+                    <div class="separacao">
+                        <div class="back-foguete"></div>
+                        <div class="foguete">
+                            <img src="images/foguete.png" alt="Foguete" />
+                        </div>
+                    </div>
+                </div>
+                <div class="bloco-2">
+                    <h2 class="title">Vantagens de comprar conosco</h2>
+                    <div class="infos">
+                        <div class="numero">01</div>
+                        <div class="vantagem">
+                            <h4>Super entrega</h4>
+                            <p>Sua comida rápida e quentinha</p>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="numero">02</div>
+                        <div class="vantagem">
+                            <h4>Ingredientes frescos</h4>
+                            <p>Os melhores ingredientes em nossos produtos</p>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="numero">03</div>
+                        <div class="vantagem">
+                            <h4>Melhores preços</h4>
+                            <p>Os melhores preços e qualidade para você</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="depoimentos">
+            <div class="container">
+                <div class="bloco-2">
+                    <div class="depoimentos">
+                        <h2 class="title">O que falam de nós</h2>
+                        <input checked type="radio" name="dep" id="dep-1" />
+                        <div class="texto-depoimento">
+                            <p>
+                                O hambúrguer é simplesmente incrível! A carne grelhada
+                                perfeitamente, combinada com ingredientes frescos e condimentos
+                                cuidadosamente escolhidos, cria uma explosão de sabores. O pão
+                                tostado e os acompanhamentos complementam perfeitamente, resultando
+                                em uma experiência gastronômica excepcional. Altamente recomendado
+                                para os amantes de hambúrgueres!
+                            </p>
+                        </div>
+                        <input type="radio" name="dep" id="dep-2" />
+                        <div class="texto-depoimento">
+                            <p>
+                                A pizza é maravilhosa! Recomendo demais pra quem gosta de uma boa
+                                pizza!!
+                            </p>
+                        </div>
+                        <div class="cliente">
+                            <label for="dep-1">
+                                <img src="images/user.png" alt="Cliente" />
+                                <div>
+                                    <h4>João Silva</h4>
+                                    <p>Programador</p>
+                                </div>
+                            </label>
+                            <label for="dep-2">
+                                <img src="images/user.png" alt="Cliente" />
+                                <div>
+                                    <h4>Maria Carvalho</h4>
+                                    <p>Professora</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloco-2">
+                    <div>
+                        <img src="images/depoimentos.png" alt="Depoimentos" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="parceiros">
+            <div class="container">
+                <h2 class="title">Nossos parceiros</h2>
+                <div class="bloco-4">
+                    <img src="images/parceiros/parceiro-1.png" alt="Parceiro" />
+                </div>
+                <div class="bloco-4">
+                    <img src="images/parceiros/parceiro-2.png" alt="Parceiro" />
+                </div>
+                <div class="bloco-4">
+                    <img src="images/parceiros/parceiro-3.png" alt="Parceiro" />
+                </div>
+                <div class="bloco-4">
+                    <img src="images/parceiros/parceiro-4.png" alt="Parceiro" />
+                </div>
+            </div>
+        </section>
+        <footer id="rodape">
+            <p>
+                Todos os direitos reservados<br />
+                Desenvolvimento web: <a href="#"> José Júnior</a>
+            </p>
+        </footer>
+        <div id="mascara">
+            <div class="menu-container">
+                <div class="fechar">
+                    <a href="#topo">X</a>
+                </div>
+                <nav>
+                    <ul class="menu-mobile">
+                        <li><a href="#topo">Home</a></li>
+                        <li><a href="#cardapio">Cardápio</a></li>
+                        <li><a href="#vantagens">Vantagens</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </body>
+</html>

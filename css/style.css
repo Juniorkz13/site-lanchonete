@@ -1,0 +1,539 @@
+*{
+    box-sizing: border-box;
+}
+
+a { text-decoration: none;}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    color: #00335e;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bloco-2 {
+    width: 50%;
+    float: left;
+}
+
+.bloco-3 {
+    width: 33.3333%;
+    float: left;
+    padding: 20px;
+}
+
+.bloco-4 {
+    width: 25%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+
+#topo {
+    background: #fff2d9;
+    padding: 15px;
+    overflow: hidden;
+}
+
+#topo .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#topo .menu ul li {
+    display: inline;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.menu ul li a {
+    color: #444;
+    transition: all 1s ease;
+}
+
+#topo .menu ul li a:hover {
+    color: #00cc99;
+}
+
+#topo .logo {
+    float: left;
+    vertical-align: middle;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#topo .logo img {
+    vertical-align: middle;
+}
+
+#topo .menu {
+    float: right;
+}
+
+#banner {
+    background: #fff2d9;
+    overflow: hidden;
+    padding: 25px 15px;
+    margin-bottom: 100px;
+}
+
+#banner h2 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+#banner input.icon-whats {
+    padding: 22px 5px 22px 55px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    background: url(../images/whatsapp.png) no-repeat 20px center , #fff;
+    background-size: 20px auto;
+    width: 60%;
+}
+
+#banner input::placeholder {
+    color: #00335e;
+}
+
+#banner .bt-whats{
+    padding: 25px 5px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background: url(../images/seta-branca.png) no-repeat center center, #00335e;
+    color: #fff;
+    width: 10%;
+    height: 59px;
+    cursor: pointer;
+    animation: seta 2s linear infinite ;
+}
+
+.img-banner { 
+    margin-left: 160%;
+    animation: direita 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s forwards 1;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+}
+
+#cardapio .imagem {
+    position: relative;
+}
+
+#cardapio .imagem::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 0%;
+    height: 0%;
+    background-color: #00334e;
+    z-index: -1;
+}
+
+#cardapio .imagem::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    right: -5px;
+    width: 0%;
+    height: 0%;
+    background-color: #00cc99;
+    z-index: -1;
+}
+
+#cardapio .imagem:hover::after, #cardapio .imagem:hover::before{
+    width: 80%;
+    height: 80%;
+    transition: all 0.5s ease;
+}
+
+
+
+.imagem img {
+    width: 100%;
+}
+
+.infos-prato h3 {
+    margin-bottom: 0;
+}
+
+.infos-prato p {
+    margin-top: 10px;
+}
+
+.bt-destaque {
+    display: block;
+    width: 170px;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+    background: #00cc99;
+    padding: 15px 5px;
+    border-radius: 200px;
+    color: #fff;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.bt-destaque::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 80px;
+    background:rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    transition: all 0.5s linear;
+    transform: rotate(30deg);
+}
+
+.bt-destaque:hover::after {
+   left: 110%;
+}
+
+.receba .fluxo {
+    text-align: center;
+}
+
+.receba .imagem {
+    text-align: center;
+    position: relative;
+}
+
+.receba .imagem img {
+    width: 100%;
+}
+
+.receba .imagem::before {
+    content: '1';
+    display: block;
+    background: #00cc99;
+    color: #fff;
+    border-radius: 50%;
+    width: 41px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    position: absolute;
+    top: 5px;
+    left: 35px;
+}
+
+.receba .bloco-3:nth-child(2) .imagem::before {
+    content: '2';
+}
+
+.receba .bloco-3:nth-child(3) .imagem::before {
+    content: '3';
+}
+
+#receba {
+    overflow: hidden;
+}
+
+#vantagens {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+#vantagens .numero{
+    width: 15%;
+    float: left;
+    font-size: 42px;
+    color: #dcdcdc;
+    text-align: center;
+    padding-top: 25px;
+    margin-left: 10%;
+}
+
+#vantagens .vantagem {
+    width: 75%;
+    float: left;
+    padding: 0px 15px;
+}
+
+#vantagens .vantagem h4 {
+    margin-bottom: 0;
+}
+
+#vantagens .vantagem p {
+    margin-top: 10px;
+}
+
+#vantagens .infos {
+    width: 100%;
+    overflow: hidden;
+}
+#vantagens .separacao {
+    position: relative;
+}
+
+#vantagens .title {
+    margin-top: 100px;
+    margin-left: 5%;
+}
+#vantagens .back-foguete {
+    background: #fff2d9;
+    width: 90%;
+    height: 350px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 45px;
+    z-index: -1;
+    margin-left: 5%;
+
+}
+
+.foguete { 
+    text-align: center;
+    position: relative;
+    animation: foguete 1.5s ease infinite alternate;
+}
+
+.foguete img {
+    width: 100%;
+}
+
+#depoimentos {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+#depoimentos img {
+    max-width: 100%;
+}
+
+#depoimentos .depoimentos {
+    margin-top: 100px;
+    position: relative;
+}
+
+#depoimentos .depoimentos .texto-depoimento p {
+    font-size: 20px;
+    padding: 10px 50px;
+    line-height: 36px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+#depoimentos .cliente {
+    overflow: hidden;
+    margin-top: 400px;
+    padding-left: 50px;
+}
+
+#depoimentos .cliente label {
+    float: left;
+    width: 50%;
+    opacity: 0.5;
+    transition: all 0.5s linear
+
+}
+
+#depoimentos .cliente  div {
+    float: left;
+    width: 90%;
+    padding: 0 20px;
+}
+
+#depoimentos .cliente img {
+    float: left;
+    width: 10%;
+}
+
+.cliente h4 {
+    margin: 0;
+}
+
+.cliente p {
+    margin: 0;
+}
+
+#depoimentos .texto-depoimento {
+    position: absolute;
+    top: 40;
+    left: 0;
+}
+
+#depoimentos input {
+    display: none;
+}
+
+#dep-2 + .texto-depoimento, #dep-1 + .texto-depoimento {
+    opacity: 0;
+    z-index: -1;
+    transition: all 1s ease;
+}
+
+#dep-1:checked + .texto-depoimento, #dep-2:checked + .texto-depoimento {
+    opacity: 1;
+    z-index: 9;
+}
+
+#dep-1:checked ~ .texto-depoimento + .cliente label[for="dep-1"]{
+    opacity: 1;
+}
+#dep-2:checked + .texto-depoimento + .cliente label[for="dep-2"]{
+    opacity: 1;
+}
+
+#parceiros {
+    margin-top: 100px;
+    overflow: hidden;
+    background: #fff2d9;
+}
+
+#rodape p {
+    text-align: center;
+    font-size: 20px;
+    padding: 100px 25px;
+}
+
+#mascara {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.90);
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+#mascara:target {
+    opacity: 1;
+    z-index: 999;
+}
+
+.menu-mobile {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 20%;
+}
+
+.menu-mobile a {
+    color: #fff;
+    font-size: 24px;
+    padding: 20px;
+    display: block;
+    text-shadow: 1px 1px 2px #333;
+}
+
+.menu-mobile a:hover {
+    background: #00cc99;
+}
+
+.bt-menu {
+    display: none;
+    margin-top: 15px;
+}
+
+.bt-menu a {
+    width: 28px;
+    height: 30px;
+    position: relative;
+    border-top: solid 3px #00334e;
+    display: block;
+}
+
+.bt-menu a::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background: #00334e;
+    top: 8px;
+    display: block;
+}
+
+.bt-menu a::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 3px;
+    background: #00334e;
+    top: 19px;
+    display: block;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.bt-menu a:hover::after {
+    width: 28px;
+}
+
+
+.fechar {
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+    margin-top: 25px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.fechar a {
+    color: #b78b8b;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes direita {
+    from {margin-left: 120%;}
+    to {margin-left: 0;}
+}
+
+@keyframes seta {
+    0% {background-position-x: center ;}
+    75% {background-position-x: center ;}
+    85% {background-position-x: 30% ;}
+    92% {background-position-x: 70% ;}
+    100% {background-position-x: center ;}
+}
+
+@keyframes foguete {
+    from {top: 0;}
+    to {top: -50px;}
+}
+
+@media (max-width: 792px) {
+    .bloco-2 {width: 100%;}
+    .bloco-3 {width: 50%;}
+    .bloco-4 {width: 50%;}
+    #banner h2, #banner p, #banner form {text-align: center;}
+    #banner img {width: 80%; margin-top: 25px;}
+    #receba .bloco-3 {width: 100%; text-align: center;}
+    .receba .imagem::before {left: 30%;}
+    .menu .links {display: none;}
+    .bt-menu {display: block;}
+}
+
+@media (max-width: 502px) {
+    .bloco-3 {width: 100%;}
+    .bloco-4 {width: 100%;}
+}
